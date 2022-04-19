@@ -1,0 +1,226 @@
+/*
+Author: Matt Nemmer
+Created: 2022-04-13
+*/
+
+/* - - - GENREAL - - - */
+:root {
+    /* Color Variables */
+    --current-text-color: black;
+    --current-text-bg-color: white;
+    --primary-color: #004400;
+    --secondary-color: #008800;
+
+    --background-color: 004400;
+    --accent-color: #008800;
+
+    /* Font Variables */
+    --serif-fonts: Cambria, Garamond, Times New Roman, Times, Georgia serif;
+    --sans-serif-fonts: Arial, Helvetica, Verdana, Century Gothic, sans-serif;
+    --monospace-fonts: Courier New, Courier, Andale Mono, monospace;
+
+    --main-fonts: var(--sans-serif-fonts);
+
+    --border-width: 5px;
+}
+html{
+    overflow-x: hidden;
+    height: 100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    height: 100%;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+    font-size: 125%;
+    background-color: var(--current-text-bg-color);
+    color: var(--current-text-color);
+    font-family: var(--main-fonts);
+}
+a{
+    color: var(--secondary-color);
+}
+
+header{
+    border-left: var(--border-width) solid var(--primary-color);
+    border-top: var(--border-width) solid var(--primary-color);
+    border-right: var(--border-width) solid var(--primary-color);
+}
+
+footer{
+    border-left: var(--border-width) solid var(--primary-color);
+    border-bottom: var(--border-width) solid var(--primary-color);
+    border-right: var(--border-width) solid var(--primary-color);
+}
+
+.site-header-container{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: max-content;
+}
+
+/* - - - HEADER - - - */
+.site-header{
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    height: max-content;
+}
+.site-title{
+    /* Position and sizing */
+    text-decoration: none;
+}
+
+.site-title-text{
+    display: flex;
+    height: 100%;
+    width: max-content;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+
+    /* Styling */
+    border-right: calc( var(--border-width) * 3 ) double var(--primary-color);
+    padding-left: 5px;
+    padding-right: 20px;
+    color: var(--current-text-color);
+    font-family: Copperplate, Papyrus, fantasy;
+    font-family: 'Didot';
+    font-size: min(2em, 3vw);
+    white-space: nowrap;
+    text-align: center;
+    /*text-transform: uppercase;*/
+}
+
+/* - - - MAIN CONTENT - - - */
+.main-container
+{
+    z-index: 1;
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    min-height: 100vh;
+    height: max-content;
+
+    background-color: var(--current-text-bg-color);
+    border-top: var(--border-width) solid var(--primary-color);
+    border-bottom: var(--border-width) solid var(--primary-color);
+}
+.site-nav-bar{
+    flex: 1;
+
+    /* Position and sizing */
+    width: 100%;
+    height: auto;
+
+    /* Styling */
+    margin: 0;
+    border-right: var(--border-width) solid var(--primary-color);
+    padding: 30px;
+    text-align: left;
+}
+.site-nav-title{
+    margin: 10px 10px 0 10px;
+}
+.site-nav-list{
+    float: left;
+    margin: 0;
+}
+.site-nav-item{
+    /*display: inline-block;*/
+    padding: 0;
+    margin-top: 10px;
+}
+.site-nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    /*line-height: 10px;*/
+    padding: 0;
+    margin: 0;
+}
+.site-nav-link:hover a{
+    background: #FFF;
+    color: #002200;
+    border-left: 1px solid var(--primary-color);
+    text-decoration: none;
+}
+
+main-container{
+    min-height: 100vh;
+    height: auto;
+}
+.main-content{
+    flex: 3;
+    min-height: 100vh;
+    height: auto;
+
+    padding: 30px;
+}
+.main-title{
+    color: var(--primary-color);
+}
+.header-link{
+    margin: 0 0 0 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+
+/* - - - FOOTER - - - */
+.site-footer-container{
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    z-index: 0;
+}
+.site-footer{
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+
+
+
+
+
+/* Styling Images */
+
+.social-link-container{
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    margin-left: auto;
+}
+
+.icon{
+    float: left;
+    height: auto;
+    width: auto;
+    max-height: 48px;
+    width: 48px;
+
+    margin: 5px;
+    padding: 0;
+}

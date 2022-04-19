@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<!--
+Author: Matt Nemmer
+Created: 2022-04-13
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="User Guide for the mobile application Biomapper.">
+        <meta name="author" content="Matthew Nemmer">
+        <link rel="canonical" href="https://github.com/biomapper/">
+        <link rel="icon" href="img/favicon.png">
+        <title>Biomapper User Guide</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <div class="site-header-container">
+            <header class="site-header">
+                <a class="site-title" href="index.html" title="Biomapper User Guide" class="" aria-label="awesome-gee-community-datasets" data-md-component="logo">
+                    <img class="icon" src="img/biomapper-logo.png" alt="Biomapper Logo">
+
+                    <div class="site-title-text">
+                        Biomapper User Guide
+                    </div>
+                </a>
+
+                <div class="social-link-container">
+                    <a class="social-link" href="https://github.com/biomapper" target="_blank" rel="noopener" title="www.github.com">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.-->
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                    </a>
+
+                    <a class="social-link" href="https://www.linkedin.com/groups/14074840/" target="_blank" rel="noopener" title="www.linkedin.com">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.-->
+                        <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                    </a>
+                </div>
+            </header>
+        </div>
+
+        <main class="main-container">
+            <nav class="site-nav-bar">
+                <div class="site-nav-title">
+                    Site Contents
+                </div>
+                <ul class="site-nav-list">
+                    <li class="site-nav-item site-nav-item-selected">
+                        <nav class="" aria-label="Population &amp; Socioeconomic" data-md-level="1">
+                            <a class="site-nav-link" href="index.html"> 
+                                Introduction
+                            </a>
+                            <!-- Changes between pages -->
+                            <ul class="site-nav-sub-list">
+                                <li class="site-nav-sub-item">
+                                    <a class="site-nav-sub-link" href="#background">
+                                        Background
+                                    </a>
+                                </li>
+                                <li class="site-nav-sub-item">
+                                    <a class="site-nav-sub-link" href="#introduction" >
+                                        Introduction
+                                    </a>
+                                </li>
+                                <li class="site-nav-sub-item">
+                                    <a class="site-nav-sub-link" href="#development">
+                                        App Development
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                    
+                    <li class="site-nav-item">
+                        <a class="site-nav-link" href="dataset-reference.html">
+                            Dataset References and Licenses
+                        </a>
+                    </li>
+
+                    <li class="site-nav-item">
+                        <a class="site-nav-link" href="data-types.html">
+                            Map Data Types
+                        </a>
+                    </li>
+
+                    <li class="site-nav-item">
+                        <a class="site-nav-link" href="map-features.html">
+                            Additional Map Features
+                        </a>
+                    </li>
+
+                    <li class="site-nav-item">
+                        <a class="site-nav-link" href="filtering.html">
+                            Filtering Map Data
+                        </a>
+                    </li>
+                    
+                    <li class="site-nav-item">
+                        <a class="site-nav-link" href="downloading.html">
+                            Downloading Map Data
+                        </a>
+                    </li>
+
+                    <li class="site-nav-item">
+                        <a class="site-nav-link" href="center-location.html">
+                            Default Center Location
+                        </a>
+                    </li>
+
+                    <li class="site-nav-item">
+                        <a class="site-nav-link" href="language.html">
+                            Language Settings
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <article class="main-content">
+                <h2 id="background" class="main-title">
+                    Background
+                    <a class="header-link" href="#background" title="Permanent link">
+                        ¶
+                    </a>
+                </h2>
+                <p>
+                    Tropical forests are vital to the global ecosystem. They are extremely biodiverse and have significant roles
+                    in various environmental processes like carbon storage and the water cycle. The protection of these forests
+                    is partly the responsibility of ecologists. They help determine the importance of forests and carry out studies
+                    within them. This work is difficult to do without satellite-derived LIDAR data. Forest ecologists struggle 
+                    with obtaining and visualizing the relevant datasets (such as canopy height models, digital elevation models, 
+                    and above-ground biomass). To solve this problem, the mobile application Biomapper has been developed. It allows
+                    ecologists the easily view the geographic data they need on a map. It also includes various tools, including the
+                    ability to filter the shown data and download limited regions for offline use.
+                </p>
+
+                <h1 id="introduction" class="main-title">
+                    Introduction
+                    <a class="header-link" href="#introduction" title="Permanent link">
+                        ¶
+                    </a>
+                </h1>
+                <p>This website is a comprehensive guide for the mobile application Biomapper. It walks through various use cases 
+                    for the app. After reading through this website, one should be able to easily navigate and use the Biomapper
+                    app. TO easily .</p>
+
+                <p><img class="icon" alt="Screenshot of Biomapper app." src="img/biomapper-logo.png"></p>
+                <p>Screenshot of Biomapper app.</p>
+
+                <!-- Changes between pages -->
+                <a href="next-page.html" class="next-page-button" rel="next">
+                    Next Page
+                </a>
+                
+                <h2 id="development" class="main-title">
+                    App Development
+                    <a class="header-link" href="#development" title="Permanent link">
+                        ¶
+                    </a>
+                </h2>
+                <p>
+                    The creation of the Android app and other necessary technologies was carried out by a group of developers known as Team
+                    Biosphere. The app was developed as part of a capstone project. Documents written as part of the development process 
+                    (requirements list, software testing plan, , etc.) can be found on the 
+                    <a href="https://ceias.nau.edu/capstone/projects/CS/2022/BioSphere/">team's website</a>. 
+                    The code for the various technologies used can be found on the 
+                    <a href="https://github.com/biomapper">team's GitHub</a>.
+                    To connect with the developers themselves, try contacting the members of this 
+                    <a href="https://www.linkedin.com/groups/14074840/">LinkedIn group</a>.
+                </p>
+            </article>
+        </main>
+
+        <div class="site-footer-container">
+            <footer class="site-footer">
+                <a class="site-title" href="index.html" title="Biomapper User Guide" aria-label="awesome-gee-community-datasets" data-md-component="logo">
+                    <img class="icon" src="img/biomapper-logo.png" alt="Biomapper Logo">
+
+                    <div class="site-title-text">
+                        Biomapper User Guide
+                    </div>
+                </a>
+
+                <div class="social-link-container">
+                    <a class="social-link" href="https://github.com/biomapper" target="_blank" rel="noopener" title="www.github.com">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.-->
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                    </a>
+
+                    <a class="social-link" href="https://www.linkedin.com/groups/14074840/" target="_blank" rel="noopener" title="www.linkedin.com">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.-->
+                        <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

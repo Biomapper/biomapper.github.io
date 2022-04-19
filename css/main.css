@@ -101,7 +101,7 @@ footer{
     color: var(--current-text-color);
     font-family: Copperplate, Papyrus, fantasy;
     font-family: 'Didot';
-    font-size: min(2em, 3vw);
+    font-size: min(2em, 5vw);
     white-space: nowrap;
     text-align: center;
     /*text-transform: uppercase;*/
@@ -116,7 +116,7 @@ footer{
     flex-direction: row;
     flex-wrap: nowrap;
 
-    min-height: 100vh;
+    min-height: max-content;
     height: max-content;
 
     background-color: var(--current-text-bg-color);
